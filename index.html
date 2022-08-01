@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container mx-auto flex justify-center ">
+      <div class="calc w-[500px] h-[550px] mt-10 border-2 border-gray-500 ">
+        <input id="calc-input" class="w-[450px] h-[60px] mt-5 ml-[25px] border-2 border-gray-500 p-5" type="text">
+        <div class="calc-signs ml-[10px] mr-[10px] mt-10">
+            <div class="grid grid-cols-4  gap-3 ">
+                <div>
+                    <h1 onclick="addInput(this)"  class="font-bold text-3xl bg-slate-200 text-center cursor-grab px-5 py-3 border-2 border-gray-500 transiton duration-200 active:scale-95">+</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="font-bold text-3xl bg-slate-200 text-center cursor-grab px-5 py-3 border-2 border-gray-500 transiton duration-200 active:scale-95 ">-</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="font-bold text-3xl bg-slate-200 text-center cursor-grab px-5 py-3 border-2 border-gray-500 transiton duration-200 active:scale-95 ">*</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="font-bold text-3xl bg-slate-200 text-center cursor-grab px-5 py-3 border-2 border-gray-500 transiton duration-200 active:scale-95 ">/</h1>
+                </div>
+              </div>
+        </div>
+        <!-- Numbers -->
+        <div class="calc-number ml-[10px] mr-[10px] mt-5">
+            <div class="grid grid-cols-4  gap-3">
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">7</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class=" border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">8</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)"  class=" border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">9</h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4  gap-3 mt-5">
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">4</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">5</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">6</h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4  gap-3 mt-5">
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">1</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">2</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">3</h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4  gap-3 mt-5">
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">0</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">.</h1>
+                </div>
+                <div>
+                    <h1 onclick="addInput(this)" class="border-2 bg-slate-100 text-center px-5 py-3 font-bold text-3xl transiton duration-200 active:scale-95 ">C</h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 relative left-[380px] bottom-[320px]">
+                <div>
+                    <button class="bg-blue-500 w-[90px] text-center py-[140px] font-bold text-white text-3xl transiton duration-200 active:scale-95">=</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Numbers -->
+
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
